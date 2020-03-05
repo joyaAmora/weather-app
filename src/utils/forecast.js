@@ -11,8 +11,8 @@ const forecast = (lat, long, callback) => {
         else
             callback(undefined, 
                 body.daily.data[0].summary + ' It is currently ' + body.currently.temperature + ' degrees and there is ' + 
-                body.currently.precipProbability + ' % of rain. The temperature max should be ' + boby.daily.data[0].temperatureHigh
-                + 'with a low of ' + boby.daily.data[0].temperatureLow
+                body.currently.precipProbability + ' % of rain. The temperature max should be ' + body.daily.data[0].temperatureHigh
+                + ' with a low of ' + body.daily.data[0].temperatureLow
             )
     })
 }
